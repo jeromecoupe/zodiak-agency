@@ -1,0 +1,19 @@
+// ---------------------------------
+// =splits
+// ---------------------------------
+
+.l-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+// ---------------------------------
+// =variants
+// ---------------------------------
+
+.l-split--4fr8fr {
+  @include breakpoint(large) {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    column-gap: calc(36 / 16 * 1rem);
+  }
+}
