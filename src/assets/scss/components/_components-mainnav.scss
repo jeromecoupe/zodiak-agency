@@ -1,0 +1,39 @@
+// ---------------------------------
+// =mainnav
+// ---------------------------------
+
+.c-mainnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: calc(6 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    gap: calc(12 / 16 * 1rem);
+  }
+}
+
+.c-mainnav__link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--color-text-inverse);
+  padding: calc(6 / 16 * 1rem) calc(12 / 16 * 1rem);
+  color: var(--color-text-inverse);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-mainnav__link.is-current {
+  text-decoration: underline;
+}

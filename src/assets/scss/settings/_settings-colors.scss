@@ -1,8 +1,11 @@
 :root {
+  // base variables (do not use in CSS)
   --color-green1: #0b6451;
   --color-green2: #1aac8d;
   --color-green3: #cefea9;
   --color-green4: #d6fbf3;
+
+  --color-green2-rgb: 11, 100, 181;
 
   --color-gray1: #031310;
   --color-gray2: #293634;
@@ -13,12 +16,17 @@
 
   --color-white: #ffffff;
 
+  // incident variables (used in CSS)
   --color-background: var(--color-white);
   --color-text: var(--color-gray2);
   --color-text-offset: var(--color-gray4);
+  --color-text-invert: var(--color-white);
+  --color-border: var(--color-gray4);
+  --color-border-light: var(--color-gray6);
 
-  --color-brand1: var(--color-green1);
-  --color-brand2: var(--color-green2);
-  --color-brand3: var(--color-green3);
-  --color-brand4: var(--color-green4);
+  --color-brand: var(--color-green2);
+  --color-brand-dark: var(--color-green1);
+  --color-brand-dark-rgb: var(--color-green1-rgb);
+  --color-brand-bright: var(--color-green3);
+  --color-brand-muted: var(--color-green4);
 }

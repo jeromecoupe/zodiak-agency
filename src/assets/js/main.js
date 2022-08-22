@@ -1,2 +1,2 @@
-import { init as message } from "./modules/test.js";
-message("Hello Pouet");
+import { init as nav } from "./modules/navigation.js";
+nav();

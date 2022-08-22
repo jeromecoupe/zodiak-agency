@@ -1,0 +1,14 @@
+// ---------------------------------
+// =big title
+// ---------------------------------
+
+.c-bigtitle {
+  font-weight: 600;
+  font-size: clamp(48px, 1rem + 7vw, 132px);
+  line-height: 1.05;
+  max-width: 15ch;
+}
+
+.c-bigtitle > span {
+  color: var(--color-brand-bright);
+}
