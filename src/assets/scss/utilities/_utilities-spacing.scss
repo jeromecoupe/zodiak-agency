@@ -1,0 +1,97 @@
+// ---------------------------------
+// =spacing utilities
+// ---------------------------------
+
+// ---------------------------------
+// variables
+// ---------------------------------
+
+$breakpoints-map: (
+  "small": "all and (min-width: 500px)",
+  "medium": "all and (min-width: 760px)",
+  "large": "all and (min-width: 1024px)",
+  "xlarge": "all and (min-width: 1440px)",
+) !default;
+
+$spacing-map: (
+  "none": 0,
+  "xxs": 3px,
+  "xs": 6px,
+  "s": 12px,
+  "m": 18px,
+  "l": 24px,
+  "xl": 30px,
+  "xxl": 60px,
+) !default;
+
+// ---------------------------------
+// base classes
+// ---------------------------------
+
+@each $name, $value in $spacing-map {
+  // margins
+  .u-margin-top-#{$name} {
+    margin-top: $value !important;
+  }
+  .u-margin-right-#{$name} {
+    margin-right: $value !important;
+  }
+  .u-margin-bottom-#{$name} {
+    margin-bottom: $value !important;
+  }
+  .u-margin-left-#{$name} {
+    margin-left: $value !important;
+  }
+
+  // paddings
+  .u-padding-top-#{$name} {
+    padding-top: $value !important;
+  }
+  .u-padding-right-#{$name} {
+    padding-right: $value !important;
+  }
+  .u-padding-bottom-#{$name} {
+    padding-bottom: $value !important;
+  }
+  .u-padding-left-#{$name} {
+    padding-left: $value !important;
+  }
+}
+
+// ---------------------------------
+// responsive classes
+// ---------------------------------
+
+@each $breakpoint, $query in $breakpoints-map {
+  @each $name, $value in $spacing-map {
+    @media #{$query} {
+      // margins
+      .u-margin-top-#{$name}\@#{$breakpoint} {
+        margin-top: $value !important;
+      }
+      .u-margin-right-#{$name}\@#{$breakpoint} {
+        margin-right: $value !important;
+      }
+      .u-margin-bottom-#{$name}\@#{$breakpoint} {
+        margin-bottom: $value !important;
+      }
+      .u-margin-left-#{$name}\@#{$breakpoint} {
+        margin-left: $value !important;
+      }
+
+      // paddings
+      .u-padding-top-#{$name}\@#{$breakpoint} {
+        padding-top: $value !important;
+      }
+      .u-padding-right-#{$name}\@#{$breakpoint} {
+        padding-right: $value !important;
+      }
+      .u-padding-bottom-#{$name}\@#{$breakpoint} {
+        padding-bottom: $value !important;
+      }
+      .u-padding-left-#{$name}\@#{$breakpoint} {
+        padding-left: $value !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// ---------------------------------
+// =project
+// ---------------------------------
+
+.c-project {
+  display: block;
+}
+
+.c-project__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(24 / 16 * 1rem);
+  text-decoration: none;
+}
+
+.c-project__title {
+  font-weight: 500;
+  font-size: calc(22 / 16 * 1rem);
+  line-height: 1.24;
+  font-family: var(--fontstack-alt);
+  margin-bottom: calc(6 / 16 * 1rem);
+  color: var(--color-text);
+
+  a:hover & {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+}
+
+.c-project__tagline {
+  font-weight: 500;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: 1.24;
+  font-family: var(--fontstack-alt);
+  margin-bottom: 0;
+  color: var(--color-text-offset);
+}
