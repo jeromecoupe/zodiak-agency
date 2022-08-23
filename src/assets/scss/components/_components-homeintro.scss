@@ -6,12 +6,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
 
-  @include breakpoint(medium) {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    column-gap: 54px;
-  }
-
-  @include breakpoint(xlarge) {
+  @include breakpoint(large) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     column-gap: 84px;
   }

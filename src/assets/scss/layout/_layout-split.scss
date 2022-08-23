@@ -5,15 +5,27 @@
 .l-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-}
+  grid-template-areas:
+    "a"
+    "b";
 
-// ---------------------------------
-// =variants
-// ---------------------------------
-
-.l-split--4fr8fr {
-  @include breakpoint(large) {
-    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  @include breakpoint(medium) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-template-areas: "a b";
     column-gap: calc(36 / 16 * 1rem);
   }
+
+  @include breakpoint(large) {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 7fr) minmax(0, 1fr);
+    grid-template-areas: "a b .";
+    column-gap: calc(36 / 16 * 1rem);
+  }
+}
+
+.l-split__title {
+  grid-area: a;
+}
+
+.l-split__text {
+  grid-area: b;
 }

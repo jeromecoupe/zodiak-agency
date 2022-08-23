@@ -9,7 +9,7 @@
   max-width: 1480px;
 
   @include breakpoint(medium) {
-    padding-left: calc(30 / 16 * 1rem);
-    padding-right: calc(30 / 16 * 1rem);
+    padding-left: calc(36 / 16 * 1rem);
+    padding-right: calc(36 / 16 * 1rem);
   }
 }
