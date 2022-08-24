@@ -1,8 +1,8 @@
 // ---------------------------------
-// =footer navigation
+// =contact list
 // ---------------------------------
 
-.c-footernav {
+.c-contactlist {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,22 +11,29 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: calc(6 / 16 * 1rem);
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-contactlist__link {
+  color: var(--color-text-invert);
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: calc(22 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    font-size: calc(26 / 16 * 1rem);
+  }
 
   @include breakpoint(large) {
-    gap: calc(3 / 16 * 1rem);
+    font-size: calc(28 / 16 * 1rem);
   }
 }
 
-.c-footernav__link {
-  color: var(--color-text-invert);
-  text-decoration: none;
-}
-
-.c-footernav__link:hover,
-.c-footernav__link:focus {
+.c-contactlist__link:hover,
+.c-contactlist__link:focus {
   text-decoration: underline;
-  text-decoration-thickness: 1px;
   text-underline-offset: 6px;
+
   text-decoration-color: rgba(255, 255, 255, 0.5);
 }
