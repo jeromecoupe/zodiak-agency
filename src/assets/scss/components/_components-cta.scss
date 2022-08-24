@@ -10,7 +10,8 @@
   text-underline-offset: 7px;
   text-decoration-color: var(--color-brand-dark);
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration-color: rgba(var(--color-brand-dark-rgb), 0.72);
   }
 }
@@ -19,7 +20,8 @@
   color: var(--color-text-inverse);
   text-decoration-color: var(--color-text-inverse);
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration-color: rgba(255, 255, 255, 0.72);
   }
 }

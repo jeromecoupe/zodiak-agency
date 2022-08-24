@@ -21,12 +21,12 @@
 .c-footernav__link {
   color: var(--color-text-invert);
   text-decoration: none;
-}
 
-.c-footernav__link:hover,
-.c-footernav__link:focus {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 6px;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+  }
 }

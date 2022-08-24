@@ -21,6 +21,14 @@
   font-weight: 400;
   font-size: calc(22 / 16 * 1rem);
 
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+  }
+
   @include breakpoint(medium) {
     font-size: calc(26 / 16 * 1rem);
   }
@@ -28,12 +36,8 @@
   @include breakpoint(large) {
     font-size: calc(28 / 16 * 1rem);
   }
-}
 
-.c-contactlist__link:hover,
-.c-contactlist__link:focus {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-
-  text-decoration-color: rgba(255, 255, 255, 0.5);
+  @include breakpoint(xlarge) {
+    font-size: calc(33 / 16 * 1rem);
+  }
 }
