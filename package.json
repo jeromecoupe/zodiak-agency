@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "server": "browser-sync start --server \"./dist\" --files \"./dist\"",
+    "server": "browser-sync start --server \"./dist\" --files \"./dist\" --no-open",
     "styles:dev": "sass --embed-source-map --source-map-urls=absolute \"src/assets/scss/main.scss\" \"dist/assets/css/main.css\"",
     "styles:prod": "sass --no-source-map --style=compressed \"src/assets/scss/main.scss\" \"dist/assets/css/main.css\"",
     "scripts:dev": "esbuild \"src/assets/js/main.js\" --target=es6 --bundle --outfile=\"dist/assets/js/main.bundle.js\"",

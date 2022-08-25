@@ -11,29 +11,34 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: calc(6 / 16 * 1rem);
+  gap: calc(18 / 16 * 1rem);
 
   @include breakpoint(large) {
-    gap: calc(12 / 16 * 1rem);
+    gap: calc(30 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
+    gap: calc(42 / 16 * 1rem);
   }
 }
 
 .c-mainnav__link {
+  padding-top: calc(6 / 16 * 1rem);
+  padding-bottom: calc(6 / 16 * 1rem);
+
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1px;
-  text-decoration-color: var(--color-text-inverse);
-  padding: calc(6 / 16 * 1rem) calc(12 / 16 * 1rem);
-  color: var(--color-text-inverse);
+
+  color: var(--color-text-invert);
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
 .c-mainnav__link.is-current {
-  text-decoration: underline;
+  padding-bottom: calc(4 / 16 * 1rem);
+  border-bottom: 2px solid var(--color-brand-bright);
 }

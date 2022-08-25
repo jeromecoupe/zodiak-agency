@@ -12,4 +12,9 @@
     padding-left: calc(36 / 16 * 1rem);
     padding-right: calc(36 / 16 * 1rem);
   }
+
+  @include breakpoint(xlarge) {
+    padding-left: calc(54 / 16 * 1rem);
+    padding-right: calc(54 / 16 * 1rem);
+  }
 }

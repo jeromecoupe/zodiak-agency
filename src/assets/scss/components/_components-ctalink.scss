@@ -1,0 +1,38 @@
+// ---------------------------------
+// =call to action
+// ---------------------------------
+
+.c-ctalink {
+  display: inline-block;
+  padding-bottom: 6px;
+
+  font-weight: 550;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: calc(24 / 16);
+  font-family: var(--fontstack--main);
+  color: var(--color-brand);
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 3px solid var(--color-brand);
+
+  transition: border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+    border-color: var(--color-brand-dark);
+  }
+}
+
+.c-ctalink--invert {
+  color: var(--color-text-invert);
+  border-color: var(--color-text-invert);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-invert);
+    border-color: var(--color-brand-bright);
+  }
+}

@@ -19,22 +19,24 @@
   text-decoration: none;
 
   transition: color 0.2s ease-out;
-}
 
-.c-button:hover {
-  border-color: var(--color-brand);
-  background-color: transparent;
-  color: var(--color-brand-dark);
-  text-decoration: none;
+  &:hover,
+  &:focus {
+    border-color: var(--color-brand);
+    background-color: transparent;
+    color: var(--color-brand-dark);
+    text-decoration: none;
+  }
 }
 
 .c-button--invert {
   border-color: rgba(255, 255, 255, 0.48);
   background-color: transparent;
   color: var(--color-white);
-}
 
-.c-button--invert:hover {
-  border-color: rgba(255, 255, 255, 0.48);
-  color: var(--color-brand-bright);
+  &:hover,
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.48);
+    color: var(--color-brand-bright);
+  }
 }

@@ -15,16 +15,18 @@
 }
 
 .c-mobilenav__link {
-  display: block;
+  display: inline-block;
+  padding-top: calc(3 / 16 * 1rem);
+  padding-bottom: calc(3 / 16 * 1rem);
   font-weight: 400;
   font-size: calc(26 / 16 * 1rem);
+  line-height: calc(36 / 26);
   color: var(--color-white);
   text-decoration: none;
 }
 
 .c-mobilenav__link.is-current {
-  text-decoration: underline;
-  text-decoration-color: inherit;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
+  text-decoration: none;
+
+  border-bottom: 3px solid var(--color-brand-bright);
 }
