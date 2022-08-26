@@ -11,7 +11,7 @@
   <meta name="description" content="{{ metaDescription }}">
 
   {# Preload #}
-  <link rel="preload" href="/dist/assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
 
   {# Open Graph #}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
@@ -27,8 +27,8 @@
   <meta name="twitter:description" content="{{ metaDescription }}">
   <meta name="twitter:image" content="{{ metaImage }}">
 
-  <script defer type="module" src="/assets/js/main.bundle.js"></script>
   <link rel="stylesheet" href="/assets/css/main.css">
+  <script defer type="module" src="/assets/js/main.bundle.js"></script>
 </head>
 <body>
   {% include "partials/siteheader.njk" %}
