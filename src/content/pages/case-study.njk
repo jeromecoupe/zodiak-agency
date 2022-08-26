@@ -5,6 +5,9 @@ permalink: case-study/index.html
 
 {% set currentSection = "cases" %}
 
+{% set metaTitle = "Case Studies" %}
+{% set metaDescription = "A selection of web projects" %}
+
 {% block content %}
   <main>
     <div class="c-banner">
@@ -38,15 +41,21 @@ permalink: case-study/index.html
 
         <div class="c-casemodule">
           <figure class="c-figure">
-            <img src="https://source.unsplash.com/qWwpHwip31M/1500x844"
-                 srcset=""
-                 sizes="100vw"
-                 loading="lazy"
-                 decoding="async"
-                 width="1500"
-                 height="844"
-                 class="o-fluidimg  o-fluidimg--full"
-                 alt="">
+            <picture>
+              <source media="(min-width: 750px)"
+                      srcset="https://source.unsplash.com/qWwpHwip31M/1024x576 1024w,
+                              https://source.unsplash.com/qWwpHwip31M/1500x844 1500w"
+                      width="1500"
+                      height="844"
+                      sizes="100vw">
+              <img src="https://source.unsplash.com/qWwpHwip31M/800x800"
+                   loading="lazy"
+                   decoding="async"
+                   width="800"
+                   height="800"
+                   class="o-fluidimg  o-fluidimg--full"
+                   alt="">
+            </picture>
             <figcaption class="c-figure__caption">This is a caption for this wonderful image</figcaption>
           </figure>
         </div>
@@ -71,17 +80,21 @@ permalink: case-study/index.html
 
         <div class="c-casemodule">
           <figure class="c-figure">
-            <img src="https://source.unsplash.com/64YrPKiguAE/600x338"
-                 srcset="https://source.unsplash.com/64YrPKiguAE/600x338 600w,
-                         https://source.unsplash.com/64YrPKiguAE/1024x576 1024w,
-                         https://source.unsplash.com/64YrPKiguAE/1500x844 1500w"
-                 sizes="100vw"
-                 loading="lazy"
-                 decoding="async"
-                 width="1500"
-                 height="844"
-                 class="o-fluidimg  o-fluidimg--full"
-                 alt="">
+            <picture>
+              <source media="(min-width: 750px)"
+                      srcset="https://source.unsplash.com/64YrPKiguAE/1024x576 1024w,
+                              https://source.unsplash.com/64YrPKiguAE/1500x844 1500w"
+                      width="1500"
+                      height="844"
+                      sizes="100vw">
+              <img src="https://source.unsplash.com/64YrPKiguAE/800x800"
+                   loading="lazy"
+                   decoding="async"
+                   width="800"
+                   height="800"
+                   class="o-fluidimg  o-fluidimg--full"
+                   alt="">
+            </picture>
             <figcaption class="c-figure__caption">This is a caption for this wonderful image</figcaption>
           </figure>
         </div>
