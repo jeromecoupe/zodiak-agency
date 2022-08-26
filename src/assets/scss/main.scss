@@ -5,6 +5,7 @@
 @import "mixins/_mixins-breakpoints.scss";
 
 @import "objects/_objects-fluidimage.scss";
+@import "objects/_objects-fluidvideo.scss";
 
 @import "base/_base-margins.scss";
 @import "base/_base-fonts.scss";
@@ -37,6 +38,8 @@
 @import "components/_components-pagination.scss";
 @import "components/_components-teamcard.scss";
 @import "components/_components-value.scss";
+@import "components/_components-casemodule.scss";
+@import "components/_components-figure.scss";
 @import "components/_components-sitefooter.scss";
 @import "components/_components-footernav.scss";
 @import "components/_components-socialmedia.scss";

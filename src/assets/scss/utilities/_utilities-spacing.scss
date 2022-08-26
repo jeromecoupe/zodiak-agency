@@ -30,30 +30,30 @@ $spacing-map: (
 
 @each $name, $value in $spacing-map {
   // margins
-  .u-margin-top-#{$name} {
+  .u-mt-#{$name} {
     margin-top: $value !important;
   }
-  .u-margin-right-#{$name} {
+  .u-mr-#{$name} {
     margin-right: $value !important;
   }
-  .u-margin-bottom-#{$name} {
+  .u-mb-#{$name} {
     margin-bottom: $value !important;
   }
-  .u-margin-left-#{$name} {
+  .u-ml-#{$name} {
     margin-left: $value !important;
   }
 
   // paddings
-  .u-padding-top-#{$name} {
+  .u-pt-#{$name} {
     padding-top: $value !important;
   }
-  .u-padding-right-#{$name} {
+  .u-pr-#{$name} {
     padding-right: $value !important;
   }
-  .u-padding-bottom-#{$name} {
+  .u-pb-#{$name} {
     padding-bottom: $value !important;
   }
-  .u-padding-left-#{$name} {
+  .u-pl-#{$name} {
     padding-left: $value !important;
   }
 }
@@ -66,30 +66,30 @@ $spacing-map: (
   @each $name, $value in $spacing-map {
     @media #{$query} {
       // margins
-      .u-margin-top-#{$name}\@#{$breakpoint} {
+      .u-mt-#{$name}\@#{$breakpoint} {
         margin-top: $value !important;
       }
-      .u-margin-right-#{$name}\@#{$breakpoint} {
+      .u-mr-#{$name}\@#{$breakpoint} {
         margin-right: $value !important;
       }
-      .u-margin-bottom-#{$name}\@#{$breakpoint} {
+      .u-mb-#{$name}\@#{$breakpoint} {
         margin-bottom: $value !important;
       }
-      .u-margin-left-#{$name}\@#{$breakpoint} {
+      .u-ml-#{$name}\@#{$breakpoint} {
         margin-left: $value !important;
       }
 
       // paddings
-      .u-padding-top-#{$name}\@#{$breakpoint} {
+      .u-pt-#{$name}\@#{$breakpoint} {
         padding-top: $value !important;
       }
-      .u-padding-right-#{$name}\@#{$breakpoint} {
+      .u-pr-#{$name}\@#{$breakpoint} {
         padding-right: $value !important;
       }
-      .u-padding-bottom-#{$name}\@#{$breakpoint} {
+      .u-pb-#{$name}\@#{$breakpoint} {
         padding-bottom: $value !important;
       }
-      .u-padding-left-#{$name}\@#{$breakpoint} {
+      .u-pl-#{$name}\@#{$breakpoint} {
         padding-left: $value !important;
       }
     }
