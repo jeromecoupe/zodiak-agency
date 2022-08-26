@@ -3,10 +3,20 @@
     <button class="c-mobilemenu__close  js-menutrigger">Close</button>
   </div>
   <div class="c-mobilemenu__body">
-    <ul class="c-mobilenav">
-      <li class="c-mobilenav__item"><a class="c-mobilenav__link  is-current" href="#">Home</a></li>
-      <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">Projects</a></li>
-      <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">About</a></li>
-    </ul>
+
+    <nav>
+      {% for navItem in mainnav %}
+        {% if loop.first %}<ul class="c-mobilenav">{% endif %}
+          {% set currentClass = "" %}
+          {% set currentAria = "" %}
+          {% if navItem.trigger == currentSection %}
+            {% set currentClass = "is-current" %}
+            {% set currentAria = 'aria-current="page"' %}
+          {% endif %}
+          <li class="c-mobilenav__item"><a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ navItem.url }}">{{ navItem.label }}</a></li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+    </nav>
+
   </div>
 </div>

@@ -3,190 +3,186 @@ permalink: index.html
 ---
 {% extends "layouts/base.njk" %}
 
+{% set currentSection = "home" %}
+
 {% block content %}
-  <div class="c-pagesection  c-pagesection--brand">
-    <div class="l-container">
-
-      <h1 class="c-pagetitle">We don't work <span>for</span> clients, we work <span>with</span> them.</h1>
-
-      <div class="c-homeintro">
-        <p class="c-homeintro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, soluta? Iusto culpa debitis id, accusamus nesciunt dolorem sapiente natus similique repudiandae corrupti fuga magnam beatae at, quibusdam aperiam architecto soluta.</p>
-        <p><a class="c-ctalink  c-ctalink--invert" href="#">Our case studies</a></p>
-      </div>
-
-    </div>
-  </div>
-  <div class="c-banner">
-    <img src="/assets/img/banner_home_800.jpg"
-         srcset="/assets/img/banner_home_800.jpg 800w,
-                 /assets/img/banner_home_1024.jpg 1024w,
-                 /assets/img/banner_home_1500.jpg 1500w,"
-         sizes="100vw"
-         loading="lazy"
-         decoding="async"
-         width="1500"
-         height="844"
-         alt="people in the office">
-  </div>
-  <div class="c-pagesection">
-    <div class="l-container">
-
-      <div class="l-split">
-        <div class="l-split__title">
-          <h2 class="c-smalltitle">What we do</h2>
-        </div>
-        <div class="l-split__text">
-          <p class="c-intro">You know your business and clients, we know a thing or two about the web. Let's do this together!</p>
-          
-          <ul class="c-vlist  c-vlist--m">
-            <li>
-              <article class="c-service">
-                <h3 class="c-service__title">Discovery and planning</h3>
-                <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
-              </article>
-            </li>
-            <li>
-              <article class="c-service">
-                <h3 class="c-service__title">Design and prototypes</h3>
-                <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
-              </article>
-            </li>
-            <li>
-              <article class="c-service">
-                <h3 class="c-service__title">Code and interactivity</h3>
-                <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
-              </article>
-            </li>
-            <li>
-              <article class="c-service">
-                <h3 class="c-service__title">Ongoing support</h3>
-                <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
-              </article>
-            </li>
-          </ul>
+  <main>
+    <div class="c-pagesection  c-pagesection--brand">
+      <div class="l-container">
+        <h1 class="c-pagetitle">We don't work <span>for</span> clients, we work <span>with</span> them.</h1>
+        <div class="c-homeintro">
+          <p class="c-homeintro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, soluta? Iusto culpa debitis id, accusamus nesciunt dolorem sapiente natus similique repudiandae corrupti fuga magnam beatae at, quibusdam aperiam architecto soluta.</p>
+          <p><a class="c-ctalink  c-ctalink--invert" href="/case-studies/">Our case studies</a></p>
         </div>
       </div>
-
     </div>
-  </div>
+    <div class="c-banner">
+      <img src="/assets/img/banner_home_800.jpg"
+           srcset="/assets/img/banner_home_800.jpg 800w,
+                   /assets/img/banner_home_1024.jpg 1024w,
+                   /assets/img/banner_home_1500.jpg 1500w,"
+           sizes="100vw"
+           loading="lazy"
+           decoding="async"
+           width="1500"
+           height="844"
+           alt="people in the office">
+    </div>
+    <div class="c-pagesection">
+      <div class="l-container">
 
-  <div class="c-pagesection">
-    <div class="l-container">
+          <div class="l-split">
+            <div class="l-split__title">
 
-      <div class="l-split">
-        <div class="l-split__title">
-          <h2 class="c-smalltitle">Latest projects</h2>
-        </div>
-        <div class="l-split__text">
-          <p class="c-intro">A small selection of projects we have been working on lately.</p>
-        </div>
+              <h2 class="c-smalltitle">What we do</h2>
+            
+            </div>
+            <div class="l-split__content">
+
+              <p class="c-intro">You know your business and clients, we know a thing or two about the web. Let's do this together!</p>
+
+              <ul class="c-vlist  c-vlist--m">
+                <li>
+                  <article class="c-service">
+                    <h3 class="c-service__title">Discovery and planning</h3>
+                    <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="c-service">
+                    <h3 class="c-service__title">Design and prototypes</h3>
+                    <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="c-service">
+                    <h3 class="c-service__title">Code and interactivity</h3>
+                    <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="c-service">
+                    <h3 class="c-service__title">Ongoing support</h3>
+                    <p class="c-service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ut, quas nemo ad fuga rerum iusto, quidem veritatis deserunt quos perferendis consequatur doloribus reprehenderit magni cumque omnis! Modi, quam.</p>
+                  </article>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
+
       </div>
-
-      <ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large  u-margin-bottom-xxl">
-        <li>
-
-          <article class="c-project">
-            <a class="c-project__link" href="#">
-              <div class="c-project__media">
-                <img src="https://source.unsplash.com/oqY09oVTa3k/450x600"
-                     srcset="https://source.unsplash.com/oqY09oVTa3k/450x600 450w
-                             https://source.unsplash.com/oqY09oVTa3k/600x800 800w"
-                     sizes="(min-width: 1500px) 345px,
-                            (min-width: 1024px) 25vw
-                            (min-width: 500px) 50vw,
-                            100vw"
-                     class="o-fluidimg"
-                     width="600"
-                     height="800"
-                     alt="">
-              </div>
-              <div class="c-project__content">
-                <h3 class="c-project__title">Institut des Arts de Diffusion</h3>
-                <p class="c-project__tagline">Rebranding an art school</p>
-              </div>
-            </a>
-          </article>
-          
-        </li>
-        <li>
-          
-          <article class="c-project">
-            <a class="c-project__link" href="#">
-              <div class="c-project__media">
-                <img src="https://source.unsplash.com/BteCp6aq4GI/450x600"
-                     srcset="https://source.unsplash.com/BteCp6aq4GI/450x600 450w
-                             https://source.unsplash.com/BteCp6aq4GI/600x800 800w"
-                     sizes="(min-width: 1500px) 345px,
-                            (min-width: 1024px) 25vw
-                            (min-width: 500px) 50vw,
-                            100vw"
-                     class="o-fluidimg"
-                     width="600"
-                     height="800"
-                     alt="">
-              </div>
-              <div class="c-project__content">
-                <h3 class="c-project__title">Name of the project</h3>
-                <p class="c-project__tagline">Short Description</p>
-              </div>
-            </a>
-          </article>
-          
-        </li>
-        <li>
-          
-          <article class="c-project">
-            <a class="c-project__link" href="#">
-              <div class="c-project__media">
-                <img src="https://source.unsplash.com/AHF_ZktTL6Q/450x600"
-                     srcset="https://source.unsplash.com/AHF_ZktTL6Q/450x600 450w
-                             https://source.unsplash.com/AHF_ZktTL6Q/600x800 800w"
-                     sizes="(min-width: 1500px) 345px,
-                            (min-width: 1024px) 25vw
-                            (min-width: 500px) 50vw,
-                            100vw"
-                     class="o-fluidimg"
-                     width="600"
-                     height="800"
-                     alt="">
-              </div>
-              <div class="c-project__content">
-                <h3 class="c-project__title">Name of the project</h3>
-                <p class="c-project__tagline">Short Description</p>
-              </div>
-            </a>
-          </article>
-          
-        </li>
-        <li>
-          
-          <article class="c-project">
-            <a class="c-project__link" href="#">
-              <div class="c-project__media">
-                <img src="https://source.unsplash.com/Mzy-OjtCI70/450x600"
-                     srcset="https://source.unsplash.com/Mzy-OjtCI70/450x600 450w
-                             https://source.unsplash.com/Mzy-OjtCI70/600x800 800w"
-                     sizes="(min-width: 1500px) 345px,
-                            (min-width: 1024px) 25vw
-                            (min-width: 500px) 50vw,
-                            100vw"
-                     class="o-fluidimg"
-                     width="600"
-                     height="800"
-                     alt="">
-              </div>
-              <div class="c-project__content">
-                <h3 class="c-project__title">Name of the project</h3>
-                <p class="c-project__tagline">Short Description</p>
-              </div>
-            </a>
-          </article>
-          
-        </li>
-      </ul>
-      
-      <p><a class="c-ctalink" href="#">See all projects</a></p>
-
     </div>
-  </div>
+    <div class="c-pagesection">
+      <div class="l-container">
+
+        <div class="l-split">
+          <div class="l-split__title">
+            <h2 class="c-smalltitle">Latest projects</h2>
+          </div>
+          <div class="l-split__content">
+            <p class="c-intro">A small selection of projects we have been working on lately.</p>
+          </div>
+        </div>
+
+        <ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large  u-margin-bottom-xl">
+          <li>
+            <article class="c-projectcard">
+              <a class="c-projectcard__link" href="#">
+                <div class="c-projectcard__media">
+                  <img src="https://source.unsplash.com/oqY09oVTa3k/450x600"
+                        srcset="https://source.unsplash.com/oqY09oVTa3k/450x600 450w
+                                https://source.unsplash.com/oqY09oVTa3k/600x800 800w"
+                        sizes="(min-width: 1500px) 345px,
+                              (min-width: 1024px) 25vw
+                              (min-width: 500px) 50vw,
+                              100vw"
+                        class="o-fluidimg"
+                        width="600"
+                        height="800"
+                        alt="">
+                </div>
+                <div class="c-projectcard__body">
+                  <h3 class="c-projectcard__title">Institut des Arts de Diffusion</h3>
+                  <p class="c-projectcard__tagline">Rebranding an art school</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="c-projectcard">
+              <a class="c-projectcard__link" href="#">
+                <p class="c-projectcard__media">
+                  <img src="https://source.unsplash.com/BteCp6aq4GI/450x600"
+                        srcset="https://source.unsplash.com/BteCp6aq4GI/450x600 450w
+                                https://source.unsplash.com/BteCp6aq4GI/600x800 800w"
+                        sizes="(min-width: 1500px) 345px,
+                              (min-width: 1024px) 25vw
+                              (min-width: 500px) 50vw,
+                              100vw"
+                        class="o-fluidimg"
+                        width="600"
+                        height="800"
+                        alt="">
+                </p>
+                <div class="c-projectcard__body">
+                  <h3 class="c-projectcard__title">Name of the project</h3>
+                  <p class="c-projectcard__tagline">Short Description</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="c-projectcard">
+              <a class="c-projectcard__link" href="#">
+                <p class="c-projectcard__media">
+                  <img src="https://source.unsplash.com/AHF_ZktTL6Q/450x600"
+                        srcset="https://source.unsplash.com/AHF_ZktTL6Q/450x600 450w
+                                https://source.unsplash.com/AHF_ZktTL6Q/600x800 800w"
+                        sizes="(min-width: 1500px) 345px,
+                              (min-width: 1024px) 25vw
+                              (min-width: 500px) 50vw,
+                              100vw"
+                        class="o-fluidimg"
+                        width="600"
+                        height="800"
+                        alt="">
+                </p>
+                <div class="c-projectcard__body">
+                  <h3 class="c-projectcard__title">Name of the project</h3>
+                  <p class="c-projectcard__tagline">Short Description</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="c-projectcard">
+              <a class="c-projectcard__link" href="#">
+                <p class="c-projectcard__media">
+                  <img src="https://source.unsplash.com/Mzy-OjtCI70/450x600"
+                        srcset="https://source.unsplash.com/Mzy-OjtCI70/450x600 450w
+                                https://source.unsplash.com/Mzy-OjtCI70/600x800 800w"
+                        sizes="(min-width: 1500px) 345px,
+                              (min-width: 1024px) 25vw
+                              (min-width: 500px) 50vw,
+                              100vw"
+                        class="o-fluidimg"
+                        width="600"
+                        height="800"
+                        alt="">
+                </p>
+                <div class="c-projectcard__body">
+                  <h3 class="c-projectcard__title">Name of the project</h3>
+                  <p class="c-projectcard__tagline">Short Description</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+        <p><a class="c-ctalink" href="#">More case studies</a></p>
+
+
+      </div>
+    </div>
+  </main>
 {% endblock %}

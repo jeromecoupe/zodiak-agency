@@ -1,21 +1,20 @@
 // ---------------------------------
-// =project
+// =team card
 // ---------------------------------
 
-.c-project {
-  display: block;
-}
-
-.c-project__link {
+.c-teamcard {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: calc(24 / 16 * 1rem);
-  text-decoration: none;
+  gap: calc(18 / 16 * 1rem);
 }
 
-.c-project__title {
+.c-teamcard__media {
+  margin: 0;
+}
+
+.c-teamcard__name {
   font-weight: 500;
   font-size: calc(22 / 16 * 1rem);
   line-height: 1.24;
@@ -31,11 +30,10 @@
   }
 }
 
-.c-project__tagline {
+.c-teamcard__role {
   font-weight: 400;
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.24;
   font-family: var(--fontstack-alt);
-  margin-bottom: 0;
   color: var(--color-text-offset);
 }

@@ -3,13 +3,21 @@
 
     <p class="c-siteheader__logo"><a href="/"><img class="c-logo" src="/assets/img/logo.svg" alt="Zodiak Agency"></a></p>
 
-    <nav class="c-siteheader__mainnav">
-      <ul class="c-mainnav">
-        <li class="c-mainnav__item"><a class="c-mainnav__link  is-current" href="#">Home</a></li>
-        <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">Case studies</a></li>
-        <li class="c-mainnav__item"><a class="c-mainnav__link" href="#">About</a></li>
-      </ul>
-    </nav>
+    <div class="c-siteheader__mainnav">
+      <nav>
+        {% for navItem in mainnav %}
+          {% if loop.first %}<ul class="c-mainnav">{% endif %}
+            {% set currentClass = "" %}
+            {% set currentAria = "" %}
+            {% if navItem.trigger == currentSection %}
+              {% set currentClass = "is-current" %}
+              {% set currentAria = 'aria-current="page"' %}
+            {% endif %}
+            <li class="c-mainnav__item"><a class="c-mainnav__link  {{ currentClass }}" {{ currentAria }} href="{{ navItem.url }}">{{ navItem.label }}</a></li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+      </nav>
+    </div>
 
     <p class="c-siteheader__menunav"><a class="c-menulink  js-menutrigger" href="#footernav">Menu</a></p>
     

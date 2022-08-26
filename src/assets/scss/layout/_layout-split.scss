@@ -12,13 +12,13 @@
   @include breakpoint(medium) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     grid-template-areas: "a b";
-    column-gap: calc(36 / 16 * 1rem);
+    column-gap: var(--gutter);
   }
 
   @include breakpoint(large) {
     grid-template-columns: minmax(0, 4fr) minmax(0, 7fr) minmax(0, 1fr);
     grid-template-areas: "a b .";
-    column-gap: calc(36 / 16 * 1rem);
+    column-gap: var(--gutter);
   }
 }
 
@@ -26,6 +26,6 @@
   grid-area: a;
 }
 
-.l-split__text {
+.l-split__content {
   grid-area: b;
 }
