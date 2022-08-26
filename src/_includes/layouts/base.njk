@@ -1,9 +1,25 @@
+{% set metaTitle = metaTitle|default("Zodiak Agency") %}
+{% set metaDescription = metaDescription|default("Friendly web agency") %}
+{% set metaImage = metaImage|default(site.url + "/assets/img/metaimage.jpg") %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zodiak Agency - {{ metaTitle }}</title>
+  <meta name="description" content="{{ metaDescription }}">
+
+  {# Preload #}
+  <link rel="preload" href="/dist/assets/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  {# Open Graph #}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ metaTitle }}">
+  <meta property="og:description" content="{{ metaDescription }}">
+  <meta property="og:image" content="{{ metaImage }}">
+  <meta property="og:site_name" content="{{ site.url }}">
+
   <script defer type="module" src="/assets/js/main.bundle.js"></script>
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
