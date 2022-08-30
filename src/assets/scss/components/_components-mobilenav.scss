@@ -23,6 +23,12 @@
   line-height: calc(36 / 26);
   color: var(--color-white);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--color-white);
+  }
 }
 
 .c-mobilenav__link.is-current {

@@ -37,6 +37,12 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-white);
+    text-decoration: none;
+  }
 }
 
 .c-mobilemenu__body {
