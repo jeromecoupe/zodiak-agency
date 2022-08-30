@@ -27,6 +27,7 @@
 
   &:hover,
   &:focus {
+    color: var(--color-text-invert);
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-thickness: 0.05em;

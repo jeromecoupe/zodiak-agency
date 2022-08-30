@@ -34,6 +34,7 @@
 
   &:hover,
   &:focus {
+    color: var(--color-text-invert);
     text-decoration: none;
   }
 }
