@@ -16,15 +16,15 @@
 }
 
 .c-vlist--s {
-  gap: calc(12 / 16 * 1rem);
+  gap: var(--spacing-s);
 }
 
 .c-vlist--m {
-  gap: calc(18 / 16 * 1rem);
+  gap: var(--spacing-m);
 }
 
 .c-vlist--l {
-  gap: calc(24 / 16 * 1rem);
+  gap: var(--spacing-l);
 }
 
 // ---------------------------------

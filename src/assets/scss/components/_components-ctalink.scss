@@ -24,7 +24,7 @@
 
 .c-ctalink > svg {
   display: inline-block;
-  margin-left: 3px;
+  margin-left: var(--spacing-xxs);
   transform: translate3d(0, 0, 0);
   transition: transform 0.1s ease-out;
 }

@@ -5,9 +5,9 @@ module.exports = [
     url: "/",
   },
   {
-    label: "Case studies",
-    trigger: "cases",
-    url: "/case-studies/",
+    label: "Projects",
+    trigger: "projects",
+    url: "/projects/",
   },
   {
     label: "About",

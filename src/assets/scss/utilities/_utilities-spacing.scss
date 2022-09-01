@@ -6,22 +6,15 @@
 // variables
 // ---------------------------------
 
-$breakpoints-map: (
-  "small": "all and (min-width: 500px)",
-  "medium": "all and (min-width: 760px)",
-  "large": "all and (min-width: 1024px)",
-  "xlarge": "all and (min-width: 1440px)",
-) !default;
-
 $spacing-map: (
-  "none": 0,
-  "xxs": 3px,
-  "xs": 6px,
-  "s": 12px,
-  "m": 18px,
-  "l": 24px,
-  "xl": 30px,
-  "xxl": 42px,
+  "none": var(--spacing-none),
+  "xxs": var(--spacing-xxs),
+  "xs": var(--spacing-xs),
+  "s": var(--spacing-s),
+  "m": var(--spacing-m),
+  "l": var(--spacing-l),
+  "xl": var(--spacing-xl),
+  "xxl": var(--spacing-xxl),
 ) !default;
 
 // ---------------------------------
