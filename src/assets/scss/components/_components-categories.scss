@@ -31,8 +31,9 @@
 
   &:hover,
   &:focus {
+    color: var(--color-text-offset);
     text-decoration: underline;
-    text-decoration-color: rgba(0, 0, 0, 0.25);
+    text-decoration-color: rgba(0, 0, 0, 0.18);
   }
 }
 

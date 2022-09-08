@@ -11,14 +11,14 @@
     </a></p>
 
     <div class="c-siteheader__mainnav">
-      <nav>
+      <nav aria-label="main navigation">
         {% for navItem in mainnav %}
           {% if loop.first %}<ul class="c-mainnav">{% endif %}
             {% set currentClass = "" %}
             {% set currentAria = "" %}
             {% if navItem.trigger == currentSection %}
               {% set currentClass = "is-current" %}
-              {% set currentAria = 'aria-current="page"' %}
+              {% set currentAria = 'aria-current="page"'|safe %}
             {% endif %}
             <li class="c-mainnav__item"><a class="c-mainnav__link  {{ currentClass }}" {{ currentAria }} href="{{ navItem.url }}">{{ navItem.label }}</a></li>
           {% if loop.last %}</ul>{% endif %}

@@ -4,14 +4,14 @@
   </div>
   <div class="c-mobilemenu__body">
 
-    <nav>
+    <nav class="navigation menu">
       {% for navItem in mainnav %}
         {% if loop.first %}<ul class="c-mobilenav">{% endif %}
           {% set currentClass = "" %}
           {% set currentAria = "" %}
           {% if navItem.trigger == currentSection %}
             {% set currentClass = "is-current" %}
-            {% set currentAria = 'aria-current="page"' %}
+            {% set currentAria = 'aria-current="page"'|safe %}
           {% endif %}
           <li class="c-mobilenav__item"><a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ navItem.url }}">{{ navItem.label }}</a></li>
         {% if loop.last %}</ul>{% endif %}

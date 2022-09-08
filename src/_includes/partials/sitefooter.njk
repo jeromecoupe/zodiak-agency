@@ -10,7 +10,7 @@
         </ul>
       </div>
       <div class="c-sitefooter__social">
-        <nav>
+        <nav aria-label="social media">
           <ul class="c-socialmedia">
             <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#" aria-label="Instragram">{% include "svg/icon_instagram.svg" %}</a></li>
             <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#" aria-label="Facebook">{% include "svg/icon_facebook.svg" %}</a></li>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="c-sitefooter__mainnav">
-        <nav id="footernav">
+        <nav aria-label="footer navigation" id="footernav">
           {% for item in mainnav %}
             {% if loop.first %}<ul class="c-footernav">{% endif %}
               <li class="c-footernav__item"><a class="c-footernav__link" href="{{ item.url }}">{{ item.label }}</a></li>
@@ -41,7 +41,7 @@
       </div>
 
       <div class="c-sitefooter__legalnav">
-        <nav>
+        <nav aria-label="legal navigation">
           {% for item in legalnav %}
             {% if loop.first %}<ul class="c-footernav">{% endif %}
               <li class="c-footernav__item"><a class="c-footernav__link" href="/assets/legal_docs/{{ item.file }}">{{ item.label }}</a></li>

@@ -9,12 +9,10 @@ const CLASSES = {
   active: "has-menu",
 };
 
-console.log(SELECTORS.triggers);
-
 const init = () => {
   SELECTORS.triggers.forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
       SELECTORS.menu.classList.toggle(CLASSES.open);
       SELECTORS.body.classList.toggle(CLASSES.active);
     });
