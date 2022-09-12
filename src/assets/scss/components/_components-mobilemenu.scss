@@ -12,6 +12,7 @@
   height: 100%;
   background-color: var(--color-brand-dark);
   padding: calc(18 / 16 * 1rem);
+  z-index: 9999;
 }
 
 .c-mobilemenu.is-open {
