@@ -1,0 +1,23 @@
+{% macro projectCard(title, tagline, url, image) %}
+  <article class="c-projectcard">
+    <a class="c-projectcard__link" href="{{ url }}">
+      <div class="c-projectcard__media">
+        <img src="{{ image }}?fit=crop&w=450&h=600"
+              srcset="{{ image }}?fit=crop&w=450&h=600 450w,
+                      {{ image }}?fit=crop&w=600&h=800 600w"
+              sizes="(min-width: 1500px) 345px,
+                    (min-width: 1024px) 25vw
+                    (min-width: 500px) 50vw,
+                    100vw"
+              class="o-fluidimg"
+              width="600"
+              height="800"
+              alt="">
+      </div>
+      <div class="c-projectcard__body">
+        <h3 class="c-projectcard__title">{{ title }}</h3>
+        <p class="c-projectcard__tagline">{{ tagline }}</p>
+      </div>
+    </a>
+  </article>
+{% endmacro %}

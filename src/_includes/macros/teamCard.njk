@@ -1,0 +1,20 @@
+{% macro teamCard(name, surname, role, image) %}
+  <div class="c-teamcard">
+    <p class="c-teamcard__media">
+      <img src="{{ image }}?fit=crop&w=450&h=450"
+            srcset="{{ image }}?fit=crop&w=450&h=450 450w
+                    {{ image }}?fit=crop&w=600&h=600 600w"
+            sizes="(min-width: 1024px) 33vw
+                  (min-width: 500px) 50vw,
+                  100vw"
+            class="o-fluidimg"
+            width="600"
+            height="600"
+            alt="">
+    </p>
+    <div class="c-teamcard__body">
+      <h3 class="c-teamcard__name">{{ name }} {{ surname }}</h3>
+      <p class="c-teamcard__role">{{ role }}</p>
+    </div>
+  </div>
+{% endmacro %}
