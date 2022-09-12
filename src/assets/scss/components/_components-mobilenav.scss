@@ -2,6 +2,17 @@
 // =mobile navigation
 // ---------------------------------
 
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(-5rem, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .c-mobilenav {
   list-style: none;
   margin: 0;
@@ -12,6 +23,10 @@
   justify-content: flex-start;
   align-items: stretch;
   gap: calc(12 / 16 * 1rem);
+}
+
+.is-open .c-mobilenav {
+  animation: moveIn 0.2s cubic-bezier(0.37, 0.45, 0.53, 1.28) both;
 }
 
 .c-mobilenav__link {
