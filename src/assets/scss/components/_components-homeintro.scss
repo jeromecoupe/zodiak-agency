@@ -7,15 +7,7 @@
   grid-template-columns: minmax(0, 1fr);
 
   @include breakpoint(large) {
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-    column-gap: 84px;
+    grid-template-columns: minmax(0, 54ch) minmax(0, 1fr);
+    column-gap: var(--gutter);
   }
-
-  @include breakpoint(xlarge) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.c-homeintro__text {
-  max-width: 60ch;
 }

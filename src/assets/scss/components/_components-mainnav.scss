@@ -11,11 +11,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: calc(18 / 16 * 1rem);
-
-  @include breakpoint(large) {
-    gap: calc(30 / 16 * 1rem);
-  }
+  gap: calc(30 / 16 * 1rem);
 
   @include breakpoint(xlarge) {
     gap: calc(42 / 16 * 1rem);
