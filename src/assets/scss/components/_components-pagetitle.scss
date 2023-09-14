@@ -9,9 +9,14 @@
     calc(1rem + 7vw),
     calc(132 / 16 * 1rem)
   );
-  line-height: 1.12;
+  line-height: 1.14;
   max-width: 15ch;
   margin-bottom: 0.75em;
+  color: var(--color-text-invert);
+
+  @include breakpoint(large) {
+    line-height: 1.08;
+  }
 }
 
 .c-pagetitle > span {
